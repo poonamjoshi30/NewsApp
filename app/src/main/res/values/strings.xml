@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TOM</string>
+    <string name="Username">Username</string>
+    <string name="Password">Enter your Password</string>
+    <string name="Signin">Sign in</string>
+    <string name="Signout">Sign out</string>
+    <string name="top">TOP</string>
+    <string name="videos">VIDEOS</string>
+    <string name="briefs">BRIEFS</string>
+    <string name="manipur">MANIPUR</string>
+    <string name="photos">PHOTOS</string>
+    <string name="photos1">Photos</string>
+    <string name="livetv">LIVE TV</string>
+    <string name="home">Home</string>
+    <string name="etimes">ETimes</string>
+    <string name="enter_etimes">Entertainment (ETimes)</string>
+    <string name="india">India</string>
+    <string name="tv">TV</string>
+    <string name="sports">Sports</string>
+    <string name="signinfb">Sign in with Facebook</string>
+    <string name="signintw">Sign in with Twitter</string>
+    <string name="signingoogle">Sign in with Google</string>
+    <string-array name="nav_drawer_labels">
+        <item>@string/home</item>
+        <item>@string/enter_etimes</item>
+        <item>@string/india</item>
+        <item>@string/photos1</item>
+        <item>@string/tv</item>
+        <item>@string/sports</item>
+        <item>@string/Signout</item>
+    </string-array>
+</resources>

@@ -1,0 +1,297 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:keepScreenOn="true"
+        android:background="@color/White"
+        android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+    <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+        android:background="@drawable/icon1"
+                    android:gravity="center"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:gravity="center"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".1" />
+
+                        <EditText
+                                android:id="@+id/login_uname"
+                                android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:background="@drawable/edittext"
+                                android:layout_height="match_parent"
+                                android:hint="Enter your E-mail address"
+                                android:inputType="text"
+                                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@."
+                                android:maxLength="50"
+                            android:drawableStart="@mipmap/email"
+                            android:drawablePadding="5dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".1" />
+
+                </TableRow>
+
+
+                <!-- Password Label -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".1" />
+
+
+
+                            <EditText
+                                android:id="@+id/login_pwd"
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:background="@drawable/edittext"
+                                android:layout_height="match_parent"
+                                android:hint="@string/Password"
+                                android:inputType="textPassword"
+                                android:maxLength="20"
+                                android:drawableStart="@mipmap/pass1"
+                                android:drawablePadding="5dp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".1" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".1" />
+
+                    <Button
+                        android:id="@+id/btnsignin"
+                        style="@style/ButtonText"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/button"
+                        android:text="@string/Signin"
+                        android:textColor="@color/White"/>
+
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".5"
+                        android:textSize="14sp"
+                        android:gravity="start"
+                        android:text="Forgot your details?"
+                        android:textAlignment="center"
+                        android:textColor="@color/Gray"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                   >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".1" />
+<TableRow
+    android:layout_weight="2"
+    android:layout_width="0dp"
+    android:layout_height="match_parent">
+                    <Button
+                        android:id="@+id/btnfb"
+                        style="@style/ButtonText2"
+                        android:drawableStart="@drawable/fb"
+                        android:inputType="textShortMessage"
+                        android:text="@string/signinfb"
+                        android:background="@color/com_facebook_blue" />
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btnfb"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:background="@null"-->
+                        <!--android:drawableLeft="@drawable/fb"-->
+                        <!--android:gravity="center"-->
+                        <!--android:minHeight="0dp"-->
+                        <!--android:minWidth="0dp"-->
+
+                        <!--android:textColor="@android:color/white" />-->
+
+                    <!--<Button-->
+                        <!--android:id="@+id/btntw"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:background="@null"-->
+                        <!--android:drawableLeft="@drawable/twitter"-->
+                        <!--android:gravity="center"-->
+                        <!--android:minHeight="0dp"-->
+                        <!--android:minWidth="0dp"-->
+
+                        <!--android:textColor="@android:color/white" />-->
+    <Button
+        android:id="@+id/btntgoogle"
+        style="@style/ButtonText2"
+        android:background="@color/OrangeRed"
+
+        android:inputType="textShortMessage"
+        android:drawableStart="@drawable/google"
+        android:text="@string/signingoogle" />
+</TableRow>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight=".1" />
+
+                </TableRow>
+
+
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight=".5" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:orientation="vertical" >
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="40dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".5"
+                    android:textSize="15sp"
+                    android:gravity="start"
+
+                    android:text="Create a new Account"
+                    android:textAlignment="center"
+                    android:textColor="@color/Black"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".1" />
+            <TableRow
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/tv_forgetpswrd"
+                    style="@style/SimpleSubText1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot password?"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start"
+                    android:textSize="16sp"
+                    android:textColor="@color/Wheat"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".1" />
+
+                <TextView
+                    android:id="@+id/tv_signup"
+                    style="@style/SimpleSubText1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="end"
+                    android:text="New here? Sign Up"
+                    android:autoLink="all"
+                    android:textSize="16sp"
+                    android:textColor="@color/Wheat"
+                    android:layout_weight="1" />
+
+
+            </TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".1" />
+            </TableRow>
+
+        </LinearLayout>
+
+    </LinearLayout>
